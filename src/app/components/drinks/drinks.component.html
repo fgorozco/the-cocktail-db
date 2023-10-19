@@ -1,0 +1,10 @@
+<div class="main-container mt-32 h-full bg-[#475751] rounded-[40px]">
+    <p class="flex justify-center text-white text-3xl pt-2">Cocktails by letter A</p>
+    <div class="grid grid-cols-3 justify-items-center">
+        <div *ngFor="let drink of drinks[0]" class="flex flex-col items-center my-20 w-[270px] h-[270px] p-3 bg-[#DFBED8] rounded-full">
+            <img class="w-full h-full rounded-full  border-4 border-[#475751]" [src]="drink.strDrinkThumb">
+            <p class="text-white pt-6 text-[18px] font-semibold">{{drink.strDrink}}</p>
+            <p class="text-[#99A29F] text-[18px] font-semibold">Add to my list <span class="text-white font-semibold">+</span></p>
+        </div>
+    </div>
+</div>
