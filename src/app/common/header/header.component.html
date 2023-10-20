@@ -1,9 +1,9 @@
 <div class="main-container flex items-center">
   <img src="../../../assets/Logo.png" alt="Logo">
   <ul class="flex space-x-16 grow ml-40 font-semibold text-lg text-[#867A78] ">
-    <li>Menu</li>
-    <li>Rewards</li>
-    <li>Blog</li>
+    <li [routerLinkActive]="'active-link'" [routerLinkActiveOptions]="{ exact: true }" class="hover:text-[#574747]"><a routerLink="/home">Menu</a></li>
+    <li [routerLinkActive]="'active-link'" [routerLinkActiveOptions]="{ exact: true }" class="hover:text-[#574747]"><a>Rewards</a></li>
+    <li [routerLinkActive]="'active-link'" [routerLinkActiveOptions]="{ exact: true }" class="hover:text-[#574747]"><a>Blog</a></li>
   </ul>
   <div class="flex">
     <input class="input-search shadow-lg shadow-gray-400" type="text" placeholder="Search">

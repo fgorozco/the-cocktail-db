@@ -10,6 +10,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { DrinksComponent } from './components/drinks/drinks.component';
 import { HomeComponent } from './components/home/home.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { IngredientsComponent } from './components/ingredients/ingredients.compo
     DrinkOfTheMomentComponent,
     DrinksComponent,
     HomeComponent,
-    IngredientsComponent
+    IngredientsComponent,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,
