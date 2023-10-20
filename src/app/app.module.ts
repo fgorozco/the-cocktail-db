@@ -11,6 +11,7 @@ import { DrinksComponent } from './components/drinks/drinks.component';
 import { HomeComponent } from './components/home/home.component';
 import { IngredientsComponent } from './components/ingredients/ingredients.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
+import { SearchByNameComponent } from './common/search-by-name/search-by-name.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { InstructionsComponent } from './components/instructions/instructions.co
     DrinksComponent,
     HomeComponent,
     IngredientsComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    SearchByNameComponent
   ],
   imports: [
     BrowserModule,
