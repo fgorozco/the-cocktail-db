@@ -1,0 +1,22 @@
+<!-- Contenedor principal -->
+<p class="flex justify-center text-[#574747] text-[30px] font-bold mt-24">Ingredients</p>
+<div class="grid grid-cols-2 mt-4">
+  <!-- Contenedor del cocktail -->
+  <div class="flex flex-col items-center justify-center gap-5" *ngFor="let ingredient of ingredients[0]">
+    <p class="text-[40px] text-[#574747] font-bold">{{ingredient.strDrink}}</p>
+    <div class="bg-[#A1DBC3] p-5 w-[500px] h-[500px] rounded-full">
+      <img class="w-full h-full rounded-full  border-4 border-[#475751]" [src]="ingredient.strDrinkThumb">
+    </div>
+  </div>
+  <!-- Contenedor de los ingredientes -->
+  <div class="relative grid grid-cols-3 justify-items-center content-center gap-y-14 bg-[#A1DBC3] w-full h-[700px] rounded-l-[80px] ">
+    <div *ngFor="let ingredient of ingredients2">
+      <div class="flex flex-col items-center">
+        <div class="flex flex-col gap-3 items-center justify-center bg-[#DFBED8] p-2 w-[250px] h-[250px] rounded-full">
+          <img class="rounded-full" [src]="ingredient.picture">
+        </div>
+        <p class="text-[#020617] font-bold text-[22px]">{{ingredient.ingredient}}</p>
+      </div>
+    </div>
+  </div>
+</div>

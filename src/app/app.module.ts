@@ -8,6 +8,8 @@ import { HeaderComponent } from './common/header/header.component';
 import { DrinkOfTheMomentComponent } from './components/drink-of-the-moment/drink-of-the-moment.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { DrinksComponent } from './components/drinks/drinks.component';
+import { HomeComponent } from './components/home/home.component';
+import { IngredientsComponent } from './components/ingredients/ingredients.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { DrinksComponent } from './components/drinks/drinks.component';
     HeaderComponent,
     FooterComponent,
     DrinkOfTheMomentComponent,
-    DrinksComponent
+    DrinksComponent,
+    HomeComponent,
+    IngredientsComponent
   ],
   imports: [
     BrowserModule,
