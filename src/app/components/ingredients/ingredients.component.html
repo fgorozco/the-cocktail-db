@@ -1,5 +1,5 @@
 <!-- Contenedor principal -->
-<p class="flex justify-center text-[#574747] text-[30px] font-bold mt-24">Ingredients</p>
+<p class="flex justify-center text-[#574747] text-[40px] font-bold mt-24">Ingredients</p>
 <div class="grid grid-cols-2 mt-4">
   <!-- Contenedor del cocktail -->
   <div class="flex flex-col items-center justify-center gap-5" *ngFor="let ingredient of ingredients[0]">
@@ -10,13 +10,19 @@
   </div>
   <!-- Contenedor de los ingredientes -->
   <div class="relative grid grid-cols-3 justify-items-center content-center gap-y-14 bg-[#A1DBC3] w-full h-[700px] rounded-l-[80px] ">
-    <div *ngFor="let ingredient of ingredients2">
+    <div *ngFor="let ingredient of ingredients2; let i = index">
       <div class="flex flex-col items-center">
-        <div class="flex flex-col gap-3 items-center justify-center bg-[#DFBED8] p-2 w-[250px] h-[250px] rounded-full">
+        <div class="flex flex-col gap-3 items-center justify-center p-2 w-[250px] h-[250px] rounded-full" [ngStyle]="{'background-color': getColor(i)}">
           <img class="rounded-full" [src]="ingredient.picture">
         </div>
         <p class="text-[#020617] font-bold text-[22px]">{{ingredient.ingredient}}</p>
       </div>
     </div>
   </div>
+</div>
+
+<div class="flex justify-center  my-14 h-14">
+  <button class="flex items-center justify-center rounded-full bg-[#5CA3A8] w-14"><img class="" src="../../../assets/left-arrow.png"></button>
+  <p class="flex mx-16 items-center text-[#020617] text-[24px] font-semibold">Next Recipe</p>
+  <button class="flex items-center justify-center rounded-full bg-[#5CA3A8] w-14"><img class="" src="../../../assets/right-arrow.png"></button>
 </div>

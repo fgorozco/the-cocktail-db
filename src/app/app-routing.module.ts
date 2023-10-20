@@ -6,7 +6,8 @@ import { IngredientsComponent } from './components/ingredients/ingredients.compo
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'ingredients/:id', component: IngredientsComponent}
+  {path: 'ingredients/:id', component: IngredientsComponent},
+  {path: '**', redirectTo: '/home'}
 ];
 
 @NgModule({
